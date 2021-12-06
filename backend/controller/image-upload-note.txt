@@ -1,0 +1,18 @@
+app.use(multer({dest : 'profile_image'}).single('image'))
+
+exports.uploadImage = (req,res)=>{
+    const imageURL = req.file;
+    console.log(imageURL)
+}
+
+console.log outut
+{
+  fieldname: 'image',
+  originalname: 'nature.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'profile_image',
+  filename: '0cc88d996eb927f0721cb5302cdb335e',
+  path: 'profile_image\\0cc88d996eb927f0721cb5302cdb335e',
+  size: 1820997
+}
